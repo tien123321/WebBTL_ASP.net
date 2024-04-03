@@ -1,0 +1,14 @@
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\bin\BTL_Final.dll.config
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\bin\BTL_Final.dll
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\bin\BTL_Final.pdb
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\obj\Debug\BTL_Final.csproj.AssemblyReference.cache
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\obj\Debug\BTL_Final.csproj.CoreCompileInputs.cache
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\obj\Debug\BTL_Final.dll
+D:\Nam 3 23-24\Lap trinh web\BTL_Final\BTL_Final\obj\Debug\BTL_Final.pdb
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\bin\BTL_Final.dll.config
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\bin\BTL_Final.dll
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\bin\BTL_Final.pdb
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\obj\Debug\BTL_Final.csproj.AssemblyReference.cache
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\obj\Debug\BTL_Final.csproj.CoreCompileInputs.cache
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\obj\Debug\BTL_Final.dll
+C:\Users\DELL G3 3590\Documents\BTL_Final\BTL_Final\obj\Debug\BTL_Final.pdb

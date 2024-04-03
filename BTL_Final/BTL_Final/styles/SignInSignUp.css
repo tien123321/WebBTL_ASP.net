@@ -1,0 +1,145 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assest/img/backgroung-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main {
+    background-image: linear-gradient(rgba(70, 18, 70, 0.3), rgba(199, 41, 186, 0.7), rgba(80, 24, 80, 0.2));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background: linear-gradient(to right,#6bbeeecf,#c957f34d);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: rotate 4s linear infinite;
+}
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+    input:focus {
+        border-color: #d31e5a;
+        outline: none;
+    }
+
+#btnDangnhap, #btnDangky #btnDoimk {
+    width: 100%;
+    padding: 10px;
+    background-color: #dd1489;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dd12bb;
+}
+
+.form-info {
+    text-align: center;
+    color: #020202;
+    margin-top: 10px;
+}
+
+    .form-info a {
+        color: #e017b5;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+.password_relay {
+    text-decoration: underline;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #e017b5;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+p {
+    color: red;
+    font-size: 14px;
+    padding: 4px
+}

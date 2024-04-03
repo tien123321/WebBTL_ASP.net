@@ -1,0 +1,495 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --boder-primary: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: inherit;
+    color: white;
+    height: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+body {
+    background-image: url("/assest/img/backgroung-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header {
+    padding: 12px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: linear-gradient(rgb(104, 33, 105), rgb(41, 20, 41));
+}
+
+.header-logo {
+    width: 120px; /* Giảm kích thước logo */
+    height: 60px; /* Giảm kích thước logo */
+    margin-left: 24px;
+}
+
+.header-logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.header-with-search {
+    width: 550px; /* Đặt chiều dài cố định */
+    margin: 0 10px;
+    border: 1px solid #8a8a8a;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.header-input-wrap {
+    flex: 1;
+    position: relative;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-search-input {
+    border: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    outline: none;
+    width: 100%;
+    border-radius: 16px; /* Làm tròn góc của input */
+}
+
+.header-search {
+    border: none;
+    background: #8628c5;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 0 16px 16px 0; /* Làm tròn góc bên phải của nút tìm kiếm */
+    cursor: pointer;
+}
+
+
+.header-sign-btn {
+    border: none;
+    background: none;
+    font-size: 18px; /* Giảm kích thước font chữ */
+    padding: 10px 20px; /* Giảm khoảng cách giữa các phần tử bên trong nút */
+    border-radius: 9999px;
+    color: white;
+}
+
+.header-sign {
+    padding-right: 20px;
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử trong phần đăng ký và đăng nhập */
+}
+
+.header-sign-up {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+.header-sign-in {
+    background-color: #e4e4e4;
+    color: #000;
+}
+
+.header-sign-up:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(46, 6, 61, 0.8);
+    cursor: pointer;
+}
+
+.header-sign-in:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*                       -------------------CONTAINER-----------------------            */
+
+.container {
+    padding: 84px 0 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* -------------------Sidebar----------------------- */
+
+.sidebar {
+    width: 320px;
+    height: 100%;
+    background-color: rgb(67, 3, 80);
+    position: fixed;
+    left: 0;
+    overflow-y: scroll;
+}
+
+    .sidebar::-webkit-scrollbar {
+        width: 8px; /* Độ rộng của thanh cuộn */
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+        background: #ffffff17;
+        border-radius: 5px;
+    }
+
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #ffffffab;
+        }
+/* ----------- */
+.sidebar-list, .sidebar-lib-list {
+    list-style: none;
+    margin: 12px 12px 0 20px;
+}
+
+.sidebar-item, .sidebar-lib-item {
+    display: flex;
+    border: 1px solid var(--boder-primary);
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(61, 61, 61, 0.3);
+}
+
+.sidebar-item {
+    padding: 20px 16px;
+    border-radius: 12px;
+    margin: 12px 0 0;
+}
+
+.sidebar-lib-item {
+    font-size: 16px;
+    padding: 8px 24px;
+    border: 1px solid var(--boder-primary);
+    border-radius: 8px;
+    margin: 12px 0 0;
+}
+
+    .sidebar-item:hover, .sidebar-lib-item:hover {
+        cursor: pointer;
+        color: #ffffff;
+        background-color: rgba(121, 21, 157, 0.6);
+    }
+
+.sidebar-item-child {
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+}
+
+.sidebar::after {
+    position: absolute;
+    width: 100%;
+    height: 264px;
+    content: "";
+}
+
+/* -------------------Content----------------------- */
+
+.content {
+    margin-left: 320px;
+    background-image: linear-gradient(rgba(136, 39, 138, 0.3), rgba(133, 35, 124, 0.6), rgba(107, 14, 110, 0.3));
+    width: 100%;
+    height: 100%;
+}
+
+.content-main {
+    padding: 0 40px;
+}
+
+.content-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+    .content-bg::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .content-bg::-webkit-scrollbar-thumb {
+        background: #ffffff17;
+        border-radius: 5px;
+    }
+
+        .content-bg::-webkit-scrollbar-thumb:hover {
+            background: #ffffffab;
+        }
+
+
+/* -------------------Muscic----------------------- */
+
+.list-music {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 100%;
+}
+
+
+.music-frame {
+    padding: 0 16px;
+    margin: 4px 0;
+    width: 100%;
+}
+
+.music-banner {
+    display: flex;
+    border-radius: 12px;
+    padding: 8px;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(202, 13, 202, 0.4), rgba(81, 22, 158, 0.2), rgba(10, 17, 112, 0.2));
+}
+
+    .music-banner:hover {
+        cursor: pointer;
+        background-color: rgba(40, 20, 73, 0.9);
+    }
+
+.music-logo {
+    width: 80px;
+    height: 50px;
+}
+
+.music-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.music-desc {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.music-name {
+    font-size: 18px;
+}
+
+.music-author {
+    font-style: italic;
+}
+
+
+/* responsive */
+@media (max-width: 1308px) and (min-width: 1025px) {
+    .sidebar {
+        min-width: 234px;
+    }
+}
+
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 744px) {
+    .header-logo {
+        width: 100px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .header-with-search {
+        width: 50%;
+    }
+
+    .header-search-input {
+        font-size: 14px;
+    }
+
+    .header-search {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .header-sign-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* sidebar */
+
+    .sidebar {
+        width: 100px;
+    }
+
+    .sidebar-item {
+        padding: 8px;
+        border: 1px solid #ccc;
+        margin: 20px 12px;
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .sidebar-item-child {
+        padding: 0;
+    }
+
+    .text-sidebar-item {
+        display: none;
+    }
+
+    .content {
+        margin-left: 100px;
+    }
+}
+
+/* mobile */
+@media (max-width: 743px) {
+
+    .header {
+        padding: 12px;
+    }
+
+    .header-logo {
+        width: 60px;
+        height: 30px;
+        margin: 0 4px;
+    }
+
+    .header-with-search {
+        width: 60%;
+        margin: 0;
+    }
+
+    .header-search-input {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .header-search {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .header-sign {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 6px;
+    }
+
+    .header-sign-btn {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+    /* container */
+
+    .container {
+        margin: 0;
+        padding-top: 96px;
+        display: block;
+    }
+
+    /* sidebar */
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        top: 60px; /* Đảm bảo không bị đè lên header */
+        left: 0;
+        z-index: 2;
+        background-color: rgb(73, 18, 78);
+    }
+
+        .sidebar::after {
+            display: none;
+        }
+
+    .sidebar-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 6px 0;
+    }
+
+    .sidebar-item {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-item-child {
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .link {
+        line-height: 6px;
+        padding: 6px 5px;
+    }
+    /* ---------------- */
+
+    .content {
+        padding-top: 0;
+        margin: 0;
+        flex: 1;
+    }
+
+    .content-bg {
+        overflow: hidden;
+    }
+
+    .content-main {
+        padding: 0 4px;
+    }
+
+    .music-frame {
+        width: 100%;
+    }
+
+    .music-banner {
+        padding: 8px 4px;
+    }
+
+    .music-logo {
+        width: 60px;
+        height: 30px;
+    }
+
+    .music-name {
+        font-size: 12px;
+    }
+
+    .music-author {
+        font-size: 10px;
+    }
+}
